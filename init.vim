@@ -5,12 +5,16 @@ set shiftwidth=2
 set expandtab
 set splitright
 set clipboard=unnamed
-set hls
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+let g:python_host_prog='/usr/bin/python2'
+let g:python3_host_prog='/usr/bin/python3'
+let g:lsp_settings_servers_dir=$HOME.'/.local/share/vim-lsp-settings/servers'
+tnoremap <silent> <C-[> <C-\><C-n>
 
 if &compatible
   set nocompatible
 endif
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
   call dein#load_toml('~/.config/nvim/dein.toml', {'lazy': 0})
@@ -24,4 +28,6 @@ endif
 filetype plugin indent on
 syntax enable
 
-:command UP UpdateRemotePlugins
+augroup filetypedetect
+  au! BufRead,BufNewFile *.tsx setfiletype typescript
+augroup END

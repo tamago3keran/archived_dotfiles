@@ -10,11 +10,8 @@ repo = 'Townk/vim-autoclose'
 [[plugins]]
 repo = 'joshdick/onedark.vim'
 hook_add = '''
-  colorscheme onedark
+  source ~/.config/nvim/plugins/onedark.vim
 '''
-
-[[plugins]]
-repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
@@ -39,3 +36,28 @@ repo = 'osyo-manga/vim-anzu'
 hook_add = '''
   source ~/.config/nvim/plugins/anzu.vim
 '''
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+  source ~/.config/nvim/plugins/vim-lsp.vim
+'''
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertEnter'
+hook_add = '''
+  source ~/.config/nvim/plugins/deoplete.vim
+'''
+
+[[plugins]]
+repo = 'lighttiger2505/deoplete-vim-lsp'

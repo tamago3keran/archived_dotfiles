@@ -1,12 +1,8 @@
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-on_event = 'InsertEnter'
-hook_add = '''
-  source ~/.config/nvim/plugins/deoplete.vim
-'''
-
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-hook_add = '''
-  source ~/.config/nvim/plugins/nerdtree.vim
+repo  = 'prettier/vim-prettier'
+build = 'npm install'
+on_ft = ['javascript', 'typescript']
+hook_source = '''
+  let g:prettier#autoformat = 0
+  autocmd BufWritePre *.js,*.json,*.tsx PrettierAsync
 '''
