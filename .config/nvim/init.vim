@@ -6,7 +6,7 @@ set expandtab
 set splitright
 set clipboard=unnamed
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-let g:python_host_prog='/usr/bin/python2'
+let g:python_host_prog='/usr/bin/python'
 let g:python3_host_prog='/usr/bin/python3'
 let g:lsp_settings_servers_dir=$HOME.'/.local/share/vim-lsp-settings/servers'
 tnoremap <silent> <C-[> <C-\><C-n>
