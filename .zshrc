@@ -5,7 +5,6 @@
 export LANG=en_US.UTF-8
 export ZDOTDIR=$HOME
 export ZHOMEDIR=$ZDOTDIR/.zsh
-export DOTFILESDIR=$HOME/dotfiles
 
 #--------------------------------------------------------------#
 ##   Boot                                                     ##
